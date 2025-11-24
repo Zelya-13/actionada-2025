@@ -13,7 +13,7 @@ def preprocess_data(X):
     X_copy = X_copy.fillna('UNKNOWN')
     
     # Извлекаем признаки из даты
-    X_copy['Date'] = pd.to_datetime(X_copy['Date'])
+    X_copy['Date'] = pd.to_datetime(X_copy['Date'], formate='mixed')
     X_copy['DayOfWeek'] = X_copy['Date'].dt.day_name()
     X_copy['Month'] = X_copy['Date'].dt.month_name()
     X_copy['IsWeekend'] = X_copy['Date'].dt.dayofweek.isin([5, 6]).astype(int)
