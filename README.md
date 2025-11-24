@@ -13,7 +13,7 @@ from pipeline import create_pipeline
 import pandas as pd
 
 # Загрузка данных
-df = pd.read_csv('your_data.csv')
+df = pd.read_csv('Daily Household Transactions.csv')
 
 # Создание и запуск пайплайна
 pipeline = create_pipeline()
