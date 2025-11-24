@@ -33,7 +33,7 @@ def create_pipeline():
             ('numeric', 'passthrough', ['Amount']),
             
             # Категориальные признаки (уже обработаны в preprocess_data)
-            ('categorical', OneHotEncoder(handle_unknown='ignore', sparse=False), 
+            ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=False), 
              ['Mode', 'Category', 'Subcategory', 'Income/Expense', 'Currency',
               'DayOfWeek', 'Month', 'IsWeekend']),
             
