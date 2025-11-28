@@ -20,3 +20,4 @@ pipeline = create_pipeline()
 X_processed = pipeline.fit_transform(df)
 
 print(f"Результат: {X_processed.shape}")
+print(X_processed)
