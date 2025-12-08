@@ -1,4 +1,4 @@
-# Analysis of bank transactions (3 задание Актионада 2025)
+# Analysis of bank transactions (3 задание Актионада 2025 не завершено)
 
 ## Описание проекта
 
